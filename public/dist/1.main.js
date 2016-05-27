@@ -20282,7 +20282,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(169),
 	/* ======== */
-	__webpack_require__(188)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, HomePage) {
+	__webpack_require__(192)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, HomePage) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20301,7 +20301,7 @@ webpackJsonp([1],[
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(170), __webpack_require__(176),
 	/* ======== */
-	__webpack_require__(186)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, TopBarMenu, Main) {
+	__webpack_require__(190)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, TopBarMenu, Main) {
 	  return React.createClass({
 	    render: function () {
 	      return React.createElement(
@@ -20732,9 +20732,9 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180), __webpack_require__(184),
 	/* ======== */
-	__webpack_require__(184)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal) {
+	__webpack_require__(188)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20743,11 +20743,7 @@ webpackJsonp([1],[
 	        { className: 'c-main_--_ ui main container' },
 	        React.createElement(MainSlider, null),
 	        React.createElement(MainPortal, null),
-	        React.createElement(
-	          'h1',
-	          { className: 'ui header' },
-	          'Semantic Ui Fixed Template'
-	        )
+	        React.createElement(LastYouTubeVideo, null)
 	      );
 	    }
 	  });
@@ -20771,9 +20767,22 @@ webpackJsonp([1],[
 	        'div',
 	        { className: 'c-main-slider_--_' },
 	        React.createElement(
-	          'p',
-	          { className: 'text-center' },
-	          'Anuncie Aqui'
+	          'div',
+	          { className: 'content-slider_--_' },
+	          React.createElement(
+	            'p',
+	            { className: 'text-center' },
+	            'Full Slide'
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'ads-content_--_' },
+	          React.createElement(
+	            'p',
+	            { className: 'text-center' },
+	            'Anuncie Aqui'
+	          )
 	        )
 	      );
 	    }
@@ -20935,41 +20944,83 @@ webpackJsonp([1],[
 /* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(185),
+	/* ======== */
+	__webpack_require__(186)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa) {
+	  return React.createClass({
 
-	// load the styles
-	var content = __webpack_require__(185);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(175)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
+	    render: function () {
+	      return React.createElement(
+	        'div',
+	        { className: 'c-last-youtube-video_--_ m-t-58' },
+	        React.createElement(
+	          'h1',
+	          { className: 'ui header' },
+	          'Último Vídeo'
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'ui special cards' },
+	          React.createElement(
+	            'div',
+	            { className: 'card full-width' },
+	            React.createElement(
+	              'div',
+	              { className: 'blurring dimmable image' },
+	              React.createElement(
+	                'div',
+	                { className: 'ui dimmer' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'content' },
+	                  React.createElement(
+	                    'div',
+	                    { className: 'center' },
+	                    React.createElement(
+	                      'div',
+	                      { className: 'ui inverted button' },
+	                      'Assistir'
+	                    )
+	                  )
+	                )
+	              ),
+	              React.createElement('img', { src: Capa })
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'content' },
+	              React.createElement(
+	                'a',
+	                { className: 'header' },
+	                'Como funciona o Google?'
+	              ),
+	              React.createElement(
+	                'div',
+	                { className: 'meta' },
+	                React.createElement(
+	                  'span',
+	                  { className: 'date' },
+	                  'Publicado em 27/05/2016'
+	                )
+	              )
+	            ),
+	            React.createElement(
+	              'div',
+	              { className: 'extra content' },
+	              'Neste vídeo Cod3r (Júlio C. Lopes) explica como o maior mecanismo de busca do mundo funciona.'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  });
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
 /* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(174)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".c-main_--_ {\n  padding-top: 80px; }\n", ""]);
-
-	// exports
-
+	module.exports = __webpack_require__.p + "e33322bb2a23200d48aaa1b65428c240.png";
 
 /***/ },
 /* 186 */
@@ -20987,8 +21038,8 @@ webpackJsonp([1],[
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss");
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./LastYouTubeVideo.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./LastYouTubeVideo.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -21006,7 +21057,7 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".c-last-youtube-video_--_ .card .blurring img {\n  max-height: 338px; }\n", ""]);
 
 	// exports
 
@@ -21027,8 +21078,8 @@ webpackJsonp([1],[
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss");
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -21046,7 +21097,87 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, "body {\n  background: #fff;\n  color: #000; }\n\n.no-margin_--_ {\n  margin: 0; }\n\n.text-center {\n  text-align: center; }\n", ""]);
+	exports.push([module.id, ".c-main_--_ {\n  padding-top: 80px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(191);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
+
+	// exports
+
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(193);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 193 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "body {\n  background: #fff;\n  color: #000; }\n\n.no-margin_--_ {\n  margin: 0; }\n\n.text-center {\n  text-align: center; }\n\n.m-t-58 {\n  margin-top: 58px; }\n\n.full-width {\n  width: 100% !important; }\n", ""]);
 
 	// exports
 

@@ -6,9 +6,10 @@ define([
   'react',
   './MainSlider',
   './MainPortal',
+  './LastYouTubeVideo',
   /* ======== */
   './resources/Main.scss'
-], function (React, MainSlider, MainPortal) {
+], function (React, MainSlider, MainPortal, LastYouTubeVideo) {
   return React.createClass({
     
     render: function () {
@@ -16,9 +17,7 @@ define([
         <div className="c-main_--_ ui main container">
           <MainSlider />
           <MainPortal/>
-          <h1 className="ui header">
-            Semantic Ui Fixed Template
-          </h1>
+          <LastYouTubeVideo />
         </div>
       )
     }
