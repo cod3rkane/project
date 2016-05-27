@@ -95,8 +95,8 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(32), __webpack_require__(166)]; (function (React, ReactDOM, HomePage) {
-	  ReactDOM.render(React.createElement(HomePage, null), document.getElementById('page-content'));
+	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(38), __webpack_require__(168)]; (function (React, ReactDOM, App) {
+	  ReactDOM.render(React.createElement(App, null), document.getElementById('pdp-app'));
 	}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
 
 /***/ }

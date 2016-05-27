@@ -27,6 +27,7 @@
     "grunt": "^1.0.1",
     "grunt-webpack": "^1.0.11",
     "html-loader": "^0.4.3",
+    "image-webpack-loader": "^1.8.0",
     "mustache": "^2.2.1",
     "node-sass": "^3.4.2",
     "postcss": "^5.0.19",

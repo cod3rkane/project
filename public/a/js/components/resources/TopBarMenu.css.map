@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEE,iCACA;EACE,UAAU,EAAE,OAAiB;AAG/B,6BACA;EACE,YAAY,EAAE,GAAG;EACjB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI",
+"sources": ["TopBarMenu.scss"],
+"names": [],
+"file": "TopBarMenu.css"
+}

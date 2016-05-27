@@ -1,0 +1,23 @@
+.c-portal-item_--_
+{
+  &.card
+  {
+    background: none !important;
+    box-shadow: none !important;
+    
+    .extra
+    {
+      color: #fff !important;
+    }
+  }
+  
+  .ui.header
+  {
+    color: #FF9C46;
+  }
+  
+  .image
+  {
+    overflow: hidden;
+  }
+}
