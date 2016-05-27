@@ -20282,7 +20282,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(169),
 	/* ======== */
-	__webpack_require__(178)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, HomePage) {
+	__webpack_require__(188)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, HomePage) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20299,9 +20299,9 @@ webpackJsonp([1],[
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(170), __webpack_require__(180),
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(170), __webpack_require__(176),
 	/* ======== */
-	__webpack_require__(176)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, TopBarMenu, Main) {
+	__webpack_require__(186)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, TopBarMenu, Main) {
 	  return React.createClass({
 	    render: function () {
 	      return React.createElement(
@@ -20411,7 +20411,7 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, ".c-top-bar-menu_--_.inverted.menu {\n  background: #ff9c46; }\n\n.c-top-bar-menu_--_ .logo_--_ {\n  margin-right: 5px;\n  width: 40px;\n  height: auto; }\n", ""]);
+	exports.push([module.id, ".c-top-bar-menu_--_.inverted.menu {\n  background: #2a90f2; }\n\n.c-top-bar-menu_--_ .logo_--_ {\n  margin-right: 5px;\n  width: 40px;\n  height: auto; }\n", ""]);
 
 	// exports
 
@@ -20728,93 +20728,13 @@ webpackJsonp([1],[
 /* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(177);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(175)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 177 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(174)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "", ""]);
-
-	// exports
-
-
-/***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(179);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(175)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 179 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(174)();
-	// imports
-
-
-	// module
-	exports.push([module.id, "body {\n  background: #000;\n  color: #fff; }\n\n.no-margin_--_ {\n  margin: 0; }\n\n.text-center {\n  text-align: center; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 180 */
-/***/ function(module, exports, __webpack_require__) {
-
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(183), __webpack_require__(186),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180),
 	/* ======== */
-	__webpack_require__(181)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal) {
+	__webpack_require__(184)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20834,47 +20754,7 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 181 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-
-	// load the styles
-	var content = __webpack_require__(182);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(175)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss", function() {
-				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 182 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(174)();
-	// imports
-
-
-	// module
-	exports.push([module.id, ".c-main_--_ {\n  padding-top: 80px; }\n", ""]);
-
-	// exports
-
-
-/***/ },
-/* 183 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20883,7 +20763,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1),
 	/* ======== */
-	__webpack_require__(184)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
+	__webpack_require__(178)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20893,7 +20773,7 @@ webpackJsonp([1],[
 	        React.createElement(
 	          'p',
 	          { className: 'text-center' },
-	          'Anúncie Aqui'
+	          'Anuncie Aqui'
 	        )
 	      );
 	    }
@@ -20901,13 +20781,13 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 184 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(185);
+	var content = __webpack_require__(179);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -20927,7 +20807,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 185 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -20941,14 +20821,14 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 186 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(187)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, PortalItem) {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(181)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, PortalItem) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20971,7 +20851,7 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 187 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20980,7 +20860,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1),
 	/* ======== */
-	__webpack_require__(188)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
+	__webpack_require__(182)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
 	  return React.createClass({
 
 	    render: function () {
@@ -21012,13 +20892,13 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 188 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(189);
+	var content = __webpack_require__(183);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -21038,6 +20918,126 @@ webpackJsonp([1],[
 	}
 
 /***/ },
+/* 183 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".c-portal-item_--_.card {\n  background: none !important;\n  box-shadow: none !important; }\n  .c-portal-item_--_.card .extra {\n    color: #000 !important; }\n\n.c-portal-item_--_ .ui.header {\n  color: #000; }\n\n.c-portal-item_--_ .image {\n  overflow: hidden; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 184 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(185);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Main.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 185 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".c-main_--_ {\n  padding-top: 80px; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 186 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(187);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./HomePage.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 187 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
+
+	// exports
+
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(189);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./App.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
 /* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21046,7 +21046,7 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, ".c-portal-item_--_.card {\n  background: none !important;\n  box-shadow: none !important; }\n  .c-portal-item_--_.card .extra {\n    color: #fff !important; }\n\n.c-portal-item_--_ .ui.header {\n  color: #FF9C46; }\n\n.c-portal-item_--_ .image {\n  overflow: hidden; }\n", ""]);
+	exports.push([module.id, "body {\n  background: #fff;\n  color: #000; }\n\n.no-margin_--_ {\n  margin: 0; }\n\n.text-center {\n  text-align: center; }\n", ""]);
 
 	// exports
 

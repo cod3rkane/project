@@ -12,7 +12,7 @@ define([
     render: function () {
       return (
         <div className="c-main-slider_--_">
-          <p className="text-center">Anúncie Aqui</p>
+          <p className="text-center">Anuncie Aqui</p>
         </div>
       )
     }

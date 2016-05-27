@@ -2,9 +2,9 @@
   background: none !important;
   box-shadow: none !important; }
   .c-portal-item_--_.card .extra {
-    color: #fff !important; }
+    color: #000 !important; }
 .c-portal-item_--_ .ui.header {
-  color: #FF9C46; }
+  color: #000; }
 .c-portal-item_--_ .image {
   overflow: hidden; }
 
