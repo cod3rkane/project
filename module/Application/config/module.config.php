@@ -52,6 +52,32 @@ return array(
                     ),
                 ),
             ),
+            'publications' => [
+              'type' => 'segment',
+              'options' => [
+                'route' => '/publicacoes',
+                'defaults' => [
+                  'controller' => 'Application\Controller\Publications',
+                  'action' => 'index'
+                ]
+              ],
+              'may_terminate' => true,
+              'child_routes' => [
+                'posts' => [
+                  'type' => 'segment',
+                  'options' => [
+                    'route' => '/[:post]',
+                    'constraints' => [
+                      'post' => '[a-zA-Z][a-zA-Z0-9_-]*'
+                    ],
+                    'defaults' => [
+                      'controller' => 'Application\Controller\Publications',
+                      'action' => 'post'
+                    ]
+                  ]
+                ]
+              ]
+            ]
         ),
     ),
     'service_manager' => array(
@@ -75,7 +101,8 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => Controller\IndexController::class
+            'Application\Controller\Index' => Controller\IndexController::class,
+            'Application\Controller\Publications' => Controller\PublicationsController::class
         ),
     ),
     'view_manager' => array(
