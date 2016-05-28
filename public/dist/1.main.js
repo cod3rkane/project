@@ -20282,7 +20282,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(169),
 	/* ======== */
-	__webpack_require__(192)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, HomePage) {
+	__webpack_require__(193)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, HomePage) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20301,7 +20301,7 @@ webpackJsonp([1],[
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(170), __webpack_require__(176),
 	/* ======== */
-	__webpack_require__(190)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, TopBarMenu, Main) {
+	__webpack_require__(191)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, TopBarMenu, Main) {
 	  return React.createClass({
 	    render: function () {
 	      return React.createElement(
@@ -20732,9 +20732,9 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180), __webpack_require__(184),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180), __webpack_require__(184), __webpack_require__(188),
 	/* ======== */
-	__webpack_require__(188)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo) {
+	__webpack_require__(189)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20743,7 +20743,8 @@ webpackJsonp([1],[
 	        { className: 'c-main_--_ ui main container' },
 	        React.createElement(MainSlider, null),
 	        React.createElement(MainPortal, null),
-	        React.createElement(LastYouTubeVideo, null)
+	        React.createElement(LastYouTubeVideo, null),
+	        React.createElement(LatestPublications, null)
 	      );
 	    }
 	  });
@@ -20949,6 +20950,12 @@ webpackJsonp([1],[
 	__webpack_require__(186)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa) {
 	  return React.createClass({
 
+	    componentDidMount: function () {
+	      $('.special.cards .image').dimmer({
+	        on: 'hover'
+	      });
+	    },
+
 	    render: function () {
 	      return React.createElement(
 	        'div',
@@ -21066,10 +21073,40 @@ webpackJsonp([1],[
 /* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(195)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, LatestPublicationItem) {
+	  return React.createClass({
+
+	    render: function () {
+	      return React.createElement(
+	        'div',
+	        { className: 'c-latest-publications_--_ m-t-58' },
+	        React.createElement(
+	          'h1',
+	          { className: 'ui header' },
+	          'Últimas Publicações'
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'ui cards' },
+	          React.createElement(LatestPublicationItem, null),
+	          React.createElement(LatestPublicationItem, null),
+	          React.createElement(LatestPublicationItem, null),
+	          React.createElement(LatestPublicationItem, null),
+	          React.createElement(LatestPublicationItem, null)
+	        )
+	      );
+	    }
+	  });
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(189);
+	var content = __webpack_require__(190);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -21089,7 +21126,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -21103,13 +21140,13 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 190 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(191);
+	var content = __webpack_require__(192);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -21129,7 +21166,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 191 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -21143,13 +21180,13 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 192 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(193);
+	var content = __webpack_require__(194);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -21169,7 +21206,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 193 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -21181,6 +21218,98 @@ webpackJsonp([1],[
 
 	// exports
 
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(198),
+	/* ======== */
+	__webpack_require__(196)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, DefautImage) {
+	  return React.createClass({
+
+	    render: function () {
+	      return React.createElement(
+	        'div',
+	        { className: 'c-latest-publication-item_--_ card full-width' },
+	        React.createElement(
+	          'div',
+	          { className: 'blurring dimmable image' },
+	          React.createElement('img', { src: DefautImage })
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'content' },
+	          React.createElement(
+	            'a',
+	            { className: 'header' },
+	            'Como funciona o Google?'
+	          ),
+	          React.createElement(
+	            'div',
+	            { className: 'meta' },
+	            React.createElement(
+	              'span',
+	              { className: 'date' },
+	              'Publicado em 27/05/2016'
+	            )
+	          )
+	        ),
+	        React.createElement(
+	          'div',
+	          { className: 'extra content' },
+	          'Neste vídeo Cod3r (Júlio C. Lopes) explica como o maior mecanismo de busca do mundo funciona.'
+	        )
+	      );
+	    }
+	  });
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ },
+/* 196 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(197);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./LatestPublicationItem.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./LatestPublicationItem.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 197 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, ".c-latest-publication-item_--_ {\n  cursor: pointer; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 198 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "16d2a6c35dc00dfc0d6519cc3f5adff1.png";
 
 /***/ }
 ]);

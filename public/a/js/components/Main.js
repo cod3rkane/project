@@ -7,9 +7,10 @@ define([
   './MainSlider',
   './MainPortal',
   './LastYouTubeVideo',
+  './LatestPublications',
   /* ======== */
   './resources/Main.scss'
-], function (React, MainSlider, MainPortal, LastYouTubeVideo) {
+], function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications) {
   return React.createClass({
     
     render: function () {
@@ -18,6 +19,7 @@ define([
           <MainSlider />
           <MainPortal/>
           <LastYouTubeVideo />
+          <LatestPublications />
         </div>
       )
     }

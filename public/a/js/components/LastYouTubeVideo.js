@@ -6,6 +6,12 @@ define([
 ], function (React, Capa) {
   return React.createClass({
     
+    componentDidMount: function () {
+      $('.special.cards .image').dimmer({
+        on: 'hover'
+      });
+    },
+    
     render: function () {
       return (
         <div className="c-last-youtube-video_--_ m-t-58">
