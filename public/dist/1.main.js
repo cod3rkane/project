@@ -20732,7 +20732,7 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(181), __webpack_require__(185), __webpack_require__(188), __webpack_require__(193),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(182), __webpack_require__(186), __webpack_require__(189), __webpack_require__(193),
 	/* ======== */
 	__webpack_require__(196)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications, Footer) {
 	  return React.createClass({
@@ -20763,25 +20763,23 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(178), __webpack_require__(190),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(178), __webpack_require__(179),
 	/* ======== */
-	__webpack_require__(179)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa, CapaDefault) {
+	__webpack_require__(180)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa, CapaDefault) {
 	  return React.createClass({
 
 	    getInitialState: function () {
 	      return {
 	        slides: [Capa, CapaDefault],
-	        currentSlide: []
+	        currentSlide: 0
 	      };
 	    },
 
-	    componentWillMount: function () {
-	      console.log('mounting component!!');
-	    },
+	    componentDidMount: function () {},
 
 	    render: function () {
-	      console.log(this.state.slides);
-
+	      var slides = this.state.slides,
+	          index = this.state.currentSlide;
 	      return React.createElement(
 	        'div',
 	        { className: 'c-main-slider_--_' },
@@ -20791,7 +20789,7 @@ webpackJsonp([1],[
 	          React.createElement(
 	            'div',
 	            { className: 'full-slider-content_--_' },
-	            React.createElement('img', { src: Capa, alt: 'Slide' })
+	            React.createElement('img', { src: slides[index], alt: 'Slide' })
 	          ),
 	          React.createElement(
 	            'span',
@@ -20825,13 +20823,28 @@ webpackJsonp([1],[
 	    },
 
 	    _onClickRight: function (e) {
-	      console.log(e);
-	      console.log('Right Clicked');
+	      var slides = this.state.slides,
+	          index = this.state.currentSlide;
+
+	      if (index++ >= slides.length - 1) {
+	        return;
+	      }
+
+	      this.setState({
+	        currentSlide: index++
+	      });
 	    },
 
 	    _onClickLeft: function (e) {
-	      console.log(e);
-	      console.log('Left Clicked');
+	      var index = this.state.currentSlide;
+
+	      if (index == 0) {
+	        return;
+	      }
+
+	      this.setState({
+	        currentSlide: --index
+	      });
 	    }
 	  });
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -20846,10 +20859,16 @@ webpackJsonp([1],[
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "16d2a6c35dc00dfc0d6519cc3f5adff1.png";
+
+/***/ },
+/* 180 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(180);
+	var content = __webpack_require__(181);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -20869,7 +20888,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -20883,14 +20902,14 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(182)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, PortalItem) {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(183)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, PortalItem) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20913,7 +20932,7 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20922,7 +20941,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1),
 	/* ======== */
-	__webpack_require__(183)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
+	__webpack_require__(184)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20954,13 +20973,13 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(184);
+	var content = __webpack_require__(185);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -20980,7 +20999,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -20994,12 +21013,12 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 185 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(178),
 	/* ======== */
-	__webpack_require__(186)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa) {
+	__webpack_require__(187)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa) {
 	  return React.createClass({
 
 	    componentDidMount: function () {
@@ -21076,13 +21095,13 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 186 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(187);
+	var content = __webpack_require__(188);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -21102,7 +21121,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 187 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -21116,10 +21135,10 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(189)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, LatestPublicationItem) {
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(190)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, LatestPublicationItem) {
 	  return React.createClass({
 
 	    render: function () {
@@ -21163,10 +21182,10 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 189 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(190),
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(179),
 	/* ======== */
 	__webpack_require__(191)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, DefautImage) {
 	  return React.createClass({
@@ -21207,12 +21226,6 @@ webpackJsonp([1],[
 	    }
 	  });
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-/***/ },
-/* 190 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "16d2a6c35dc00dfc0d6519cc3f5adff1.png";
 
 /***/ },
 /* 191 */

@@ -14,22 +14,21 @@ define([
     getInitialState: function () {
       return {
         slides: [Capa, CapaDefault],
-        currentSlide: []
+        currentSlide: 0
       }
     },
     
-    componentWillMount: function () {
-      console.log('mounting component!!');
+    componentDidMount: function () {
     },
     
     render: function () {
-      console.log(this.state.slides);
-      
+      var slides = this.state.slides,
+        index = this.state.currentSlide;
       return (
         <div className="c-main-slider_--_">
           <div className="content-slider_--_">
             <div className="full-slider-content_--_">
-              <img src={Capa} alt="Slide"/>
+              <img src={slides[index]} alt="Slide"/>
             </div>
             <span className="arrow_--_ left-arrow_--_" onClick={this._onClickLeft}>
               <button className="circular ui icon button">
@@ -50,13 +49,28 @@ define([
     },
     
     _onClickRight: function (e) {
-      console.log(e);
-      console.log('Right Clicked');
+      var slides = this.state.slides,
+        index = this.state.currentSlide;
+      
+      if (index++ >= (slides.length - 1)) {
+        return;
+      }
+      
+      this.setState({
+        currentSlide: index++
+      })
     },
     
     _onClickLeft: function (e) {
-      console.log(e);
-      console.log('Left Clicked');
+      var index = this.state.currentSlide;
+      
+      if (index == 0) {
+        return;
+      }
+
+      this.setState({
+        currentSlide: --index
+      })
     }
   })
 });
