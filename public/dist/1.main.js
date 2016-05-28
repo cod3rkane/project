@@ -21248,7 +21248,7 @@ webpackJsonp([1],[
 	          React.createElement(
 	            'a',
 	            { className: 'header' },
-	            'Como funciona o Google?'
+	            'Post Title'
 	          ),
 	          React.createElement(
 	            'div',
@@ -21263,7 +21263,7 @@ webpackJsonp([1],[
 	        React.createElement(
 	          'div',
 	          { className: 'extra content' },
-	          'Neste vídeo Cod3r (Júlio C. Lopes) explica como o maior mecanismo de busca do mundo funciona.'
+	          'Description.'
 	        )
 	      );
 	    }

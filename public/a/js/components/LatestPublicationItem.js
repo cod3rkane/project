@@ -13,13 +13,13 @@ define([
             <img src={DefautImage}/>
           </div>
           <div className="content">
-            <a className="header">Como funciona o Google?</a>
+            <a className="header">Post Title</a>
             <div className="meta">
               <span className="date">Publicado em 27/05/2016</span>
             </div>
           </div>
           <div className="extra content">
-            Neste vídeo Cod3r (Júlio C. Lopes) explica como o maior mecanismo de busca do mundo funciona.
+            Description.
           </div>
         </div>
       )
