@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,kBACA;EACE,OAAO,EAAE,MAAM",
+"mappings": "AAAA,kBACA;EACE,cAAc,EAAE,IAAI;EAEpB,sCACA;IACE,QAAQ,EAAE,QAAQ;IAElB,iDACA;MACE,QAAQ,EAAE,QAAQ;MAClB,GAAG,EAAE,KAAK;IAGZ,sDACA;MACE,IAAI,EAAE,GAAG;IAGX,uDACA;MACE,KAAK,EAAE,GAAG",
 "sources": ["MainSlider.scss"],
 "names": [],
 "file": "MainSlider.css"

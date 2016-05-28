@@ -1,4 +1,25 @@
 .c-main-slider_--_
 {
-  padding: 76px 0;
+  padding-bottom: 76px;
+  
+  .content-slider_--_
+  {
+    position: relative;
+
+    .arrow_--_
+    {
+      position: absolute;
+      top: 151px;
+    }
+
+    .left-arrow_--_
+    {
+      left: 8px;
+    }
+
+    .right-arrow_--_
+    {
+      right: 8px;
+    }
+  }
 }

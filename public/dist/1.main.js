@@ -20732,7 +20732,7 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180), __webpack_require__(184), __webpack_require__(188), __webpack_require__(193),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(181), __webpack_require__(185), __webpack_require__(188), __webpack_require__(193),
 	/* ======== */
 	__webpack_require__(196)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications, Footer) {
 	  return React.createClass({
@@ -20763,12 +20763,25 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(178), __webpack_require__(190),
 	/* ======== */
-	__webpack_require__(178)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
+	__webpack_require__(179)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa, CapaDefault) {
 	  return React.createClass({
 
+	    getInitialState: function () {
+	      return {
+	        slides: [Capa, CapaDefault],
+	        currentSlide: []
+	      };
+	    },
+
+	    componentWillMount: function () {
+	      console.log('mounting component!!');
+	    },
+
 	    render: function () {
+	      console.log(this.state.slides);
+
 	      return React.createElement(
 	        'div',
 	        { className: 'c-main-slider_--_' },
@@ -20776,9 +20789,27 @@ webpackJsonp([1],[
 	          'div',
 	          { className: 'content-slider_--_' },
 	          React.createElement(
-	            'p',
-	            { className: 'text-center' },
-	            'Full Slide'
+	            'div',
+	            { className: 'full-slider-content_--_' },
+	            React.createElement('img', { src: Capa, alt: 'Slide' })
+	          ),
+	          React.createElement(
+	            'span',
+	            { className: 'arrow_--_ left-arrow_--_', onClick: this._onClickLeft },
+	            React.createElement(
+	              'button',
+	              { className: 'circular ui icon button' },
+	              React.createElement('i', { className: 'angle left icon' })
+	            )
+	          ),
+	          React.createElement(
+	            'span',
+	            { className: 'arrow_--_ right-arrow_--_', onClick: this._onClickRight },
+	            React.createElement(
+	              'button',
+	              { className: 'circular ui icon button' },
+	              React.createElement('i', { className: 'angle right icon' })
+	            )
 	          )
 	        ),
 	        React.createElement(
@@ -20791,6 +20822,16 @@ webpackJsonp([1],[
 	          )
 	        )
 	      );
+	    },
+
+	    _onClickRight: function (e) {
+	      console.log(e);
+	      console.log('Right Clicked');
+	    },
+
+	    _onClickLeft: function (e) {
+	      console.log(e);
+	      console.log('Left Clicked');
 	    }
 	  });
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -20799,10 +20840,16 @@ webpackJsonp([1],[
 /* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "e33322bb2a23200d48aaa1b65428c240.png";
+
+/***/ },
+/* 179 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(179);
+	var content = __webpack_require__(180);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -20822,7 +20869,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 179 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -20830,20 +20877,20 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, ".c-main-slider_--_ {\n  padding: 76px 0; }\n", ""]);
+	exports.push([module.id, ".c-main-slider_--_ {\n  padding-bottom: 76px; }\n  .c-main-slider_--_ .content-slider_--_ {\n    position: relative; }\n    .c-main-slider_--_ .content-slider_--_ .arrow_--_ {\n      position: absolute;\n      top: 151px; }\n    .c-main-slider_--_ .content-slider_--_ .left-arrow_--_ {\n      left: 8px; }\n    .c-main-slider_--_ .content-slider_--_ .right-arrow_--_ {\n      right: 8px; }\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 180 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(181)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, PortalItem) {
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(182)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, PortalItem) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20866,7 +20913,7 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 181 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -20875,7 +20922,7 @@ webpackJsonp([1],[
 
 	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1),
 	/* ======== */
-	__webpack_require__(182)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
+	__webpack_require__(183)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
 	  return React.createClass({
 
 	    render: function () {
@@ -20907,13 +20954,13 @@ webpackJsonp([1],[
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 
 /***/ },
-/* 182 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(183);
+	var content = __webpack_require__(184);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(175)(content, {});
@@ -20933,7 +20980,7 @@ webpackJsonp([1],[
 	}
 
 /***/ },
-/* 183 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
 	exports = module.exports = __webpack_require__(174)();
@@ -20947,10 +20994,10 @@ webpackJsonp([1],[
 
 
 /***/ },
-/* 184 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(185),
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(178),
 	/* ======== */
 	__webpack_require__(186)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, Capa) {
 	  return React.createClass({
@@ -21027,12 +21074,6 @@ webpackJsonp([1],[
 	    }
 	  });
 	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-
-/***/ },
-/* 185 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "e33322bb2a23200d48aaa1b65428c240.png";
 
 /***/ },
 /* 186 */
@@ -21340,7 +21381,7 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, ".c-main_--_ {\n  padding-top: 80px; }\n", ""]);
+	exports.push([module.id, ".c-main_--_ {\n  padding-top: 76px; }\n", ""]);
 
 	// exports
 

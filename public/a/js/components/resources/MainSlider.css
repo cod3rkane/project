@@ -1,4 +1,13 @@
 .c-main-slider_--_ {
-  padding: 76px 0; }
+  padding-bottom: 76px; }
+  .c-main-slider_--_ .content-slider_--_ {
+    position: relative; }
+    .c-main-slider_--_ .content-slider_--_ .arrow_--_ {
+      position: absolute;
+      top: 151px; }
+    .c-main-slider_--_ .content-slider_--_ .left-arrow_--_ {
+      left: 8px; }
+    .c-main-slider_--_ .content-slider_--_ .right-arrow_--_ {
+      right: 8px; }
 
 /*# sourceMappingURL=MainSlider.css.map */
