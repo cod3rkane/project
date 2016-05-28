@@ -8,18 +8,22 @@ define([
   './MainPortal',
   './LastYouTubeVideo',
   './LatestPublications',
+  './Footer',
   /* ======== */
   './resources/Main.scss'
-], function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications) {
+], function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications, Footer) {
   return React.createClass({
     
     render: function () {
       return (
-        <div className="c-main_--_ ui main container">
-          <MainSlider />
-          <MainPortal/>
-          <LastYouTubeVideo />
-          <LatestPublications />
+        <div className="c-main_--_">
+          <div className="ui main container">
+            <MainSlider />
+            <MainPortal/>
+            <LastYouTubeVideo />
+            <LatestPublications />
+          </div>
+          <Footer />
         </div>
       )
     }

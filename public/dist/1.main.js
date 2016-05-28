@@ -20732,19 +20732,24 @@ webpackJsonp([1],[
 	 * Created by jkane on 5/21/16.
 	 */
 
-	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180), __webpack_require__(184), __webpack_require__(188),
+	!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1), __webpack_require__(177), __webpack_require__(180), __webpack_require__(184), __webpack_require__(188), __webpack_require__(199),
 	/* ======== */
-	__webpack_require__(189)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications) {
+	__webpack_require__(189)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React, MainSlider, MainPortal, LastYouTubeVideo, LatestPublications, Footer) {
 	  return React.createClass({
 
 	    render: function () {
 	      return React.createElement(
 	        'div',
-	        { className: 'c-main_--_ ui main container' },
-	        React.createElement(MainSlider, null),
-	        React.createElement(MainPortal, null),
-	        React.createElement(LastYouTubeVideo, null),
-	        React.createElement(LatestPublications, null)
+	        { className: 'c-main_--_' },
+	        React.createElement(
+	          'div',
+	          { className: 'ui main container' },
+	          React.createElement(MainSlider, null),
+	          React.createElement(MainPortal, null),
+	          React.createElement(LastYouTubeVideo, null),
+	          React.createElement(LatestPublications, null)
+	        ),
+	        React.createElement(Footer, null)
 	      );
 	    }
 	  });
@@ -21214,7 +21219,7 @@ webpackJsonp([1],[
 
 
 	// module
-	exports.push([module.id, "body {\n  background: #fff;\n  color: #000; }\n\n.no-margin_--_ {\n  margin: 0; }\n\n.text-center {\n  text-align: center; }\n\n.m-t-58 {\n  margin-top: 58px; }\n\n.full-width {\n  width: 100% !important; }\n", ""]);
+	exports.push([module.id, "body {\n  background: #fff;\n  color: #000; }\n\n.no-margin_--_ {\n  margin: 0; }\n\n.text-center {\n  text-align: center; }\n\n.text-right {\n  text-align: right; }\n\n.m-t-58 {\n  margin-top: 58px; }\n\n.full-width {\n  width: 100% !important; }\n", ""]);
 
 	// exports
 
@@ -21310,6 +21315,98 @@ webpackJsonp([1],[
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "16d2a6c35dc00dfc0d6519cc3f5adff1.png";
+
+/***/ },
+/* 199 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(1),
+	/* ======== */
+	__webpack_require__(200)], __WEBPACK_AMD_DEFINE_RESULT__ = function (React) {
+	  return React.createClass({
+
+	    render: function () {
+	      return React.createElement(
+	        'div',
+	        { className: 'c-footer_--_ m-t-58' },
+	        React.createElement(
+	          'div',
+	          { className: 'ui inverted vertical footer blue segment' },
+	          React.createElement(
+	            'div',
+	            { className: 'ui container' },
+	            React.createElement(
+	              'div',
+	              { className: 'ui two column grid' },
+	              React.createElement(
+	                'div',
+	                { className: 'row' },
+	                React.createElement(
+	                  'div',
+	                  { className: 'column' },
+	                  React.createElement(
+	                    'p',
+	                    null,
+	                    'Copyright © 2016 Papo de Programador. Todos os direitos reservados.'
+	                  )
+	                ),
+	                React.createElement(
+	                  'div',
+	                  { className: 'column' },
+	                  React.createElement(
+	                    'p',
+	                    { className: 'text-right' },
+	                    'Versão 1.0.2 (Babel)'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  });
+	}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+
+/***/ },
+/* 200 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(201);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(175)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Footer.scss", function() {
+				var newContent = require("!!./../../../../../node_modules/css-loader/index.js!./../../../../../node_modules/sass-loader/index.js!./Footer.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 201 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(174)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
+
+	// exports
+
 
 /***/ }
 ]);
