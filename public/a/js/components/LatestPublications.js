@@ -17,6 +17,15 @@ define([
             <LatestPublicationItem />
             <LatestPublicationItem />
           </div>
+          <div className="ui right aligned grid">
+            <div className="right floated left aligned sixteen wide column">
+              <div className="ui text-center">
+                <a href="/publicacoes" className="ui default fluid button">
+                  Mais Publicações
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       )
     }
