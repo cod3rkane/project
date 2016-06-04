@@ -60,23 +60,20 @@ return array(
                   'controller' => 'Application\Controller\Publications',
                   'action' => 'index'
                 ]
-              ],
-              'may_terminate' => true,
-              'child_routes' => [
-                'posts' => [
-                  'type' => 'segment',
-                  'options' => [
-                    'route' => '/[:post]',
-                    'constraints' => [
-                      'post' => '[a-zA-Z][a-zA-Z0-9_-]*'
-                    ],
-                    'defaults' => [
-                      'controller' => 'Application\Controller\Publications',
-                      'action' => 'post'
-                    ]
-                  ]
-                ]
               ]
+            ],
+            'news' => [
+              'type' => 'segment',
+              'options' => [
+                  'route' => '/noticia/[:post]',
+                  'constraints' => [
+                    'post' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ],
+                  'defaults' => [
+                    'controller' => 'Application\Controller\Publications',
+                    'action' => 'post'
+                  ]
+                ],
             ]
         ),
     ),
