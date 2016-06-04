@@ -1,10 +1,11 @@
 require([
   'react',
   'react-dom',
-  './components/App'
-], function(React, ReactDOM, App) {
-  ReactDOM.render(<App />,
+  'react-router',
+  './util/Routes'
+], function(React, ReactDOM, {Router, browserHistory}, Routes) {
+  ReactDOM.render(
+    <Router history={browserHistory} routes={Routes} />,
     document.getElementById('pdp-app')
   );
 });
-
