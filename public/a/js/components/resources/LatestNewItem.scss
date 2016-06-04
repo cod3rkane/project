@@ -1,0 +1,19 @@
+.latest-news-item_--_
+{
+  padding-bottom: 0 !important;
+  cursor: pointer;
+
+  .header
+  {
+    transition: color .4s ease;
+    margin-bottom: 4px;
+  }
+
+  &:hover
+  {
+    .header
+    {
+      color: #2a90f2;
+    }
+  }
+}

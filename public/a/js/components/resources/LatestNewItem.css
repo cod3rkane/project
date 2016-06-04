@@ -1,0 +1,10 @@
+.latest-news-item_--_ {
+  padding-bottom: 0 !important;
+  cursor: pointer; }
+  .latest-news-item_--_ .header {
+    transition: color .4s ease;
+    margin-bottom: 4px; }
+  .latest-news-item_--_:hover .header {
+    color: #2a90f2; }
+
+/*# sourceMappingURL=LatestNewItem.css.map */

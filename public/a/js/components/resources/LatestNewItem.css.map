@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qBACA;EACE,cAAc,EAAE,YAAY;EAC5B,MAAM,EAAE,OAAO;EAEf,6BACA;IACE,UAAU,EAAE,cAAc;IAC1B,aAAa,EAAE,GAAG;EAKlB,mCACA;IACE,KAAK,EAAE,OAAO",
+"sources": ["LatestNewItem.scss"],
+"names": [],
+"file": "LatestNewItem.css"
+}

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,uBACA;EACE,WAAW,EAAE,IAAI;EAEjB,kCACA;IACE,aAAa,EAAE,IAAI;IAEnB,qCACA;MACE,aAAa,EAAE,CAAC;IAGlB,uCACA;MACE,YAAY,EAAE,GAAG",
+"sources": ["SinglePostPage.scss"],
+"names": [],
+"file": "SinglePostPage.css"
+}

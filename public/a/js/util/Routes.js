@@ -4,8 +4,9 @@
 
 define([
   '../components/App',
-  '../components/Publications'
-], function (App, Publications) {
+  '../components/Publications',
+  '../components/SinglePostPage',
+], function (App, Publications, SinglePostPage) {
   return {
     path: '/',
     indexRoute: {
@@ -15,6 +16,18 @@ define([
       {
         path: 'publicacoes',
         component: Publications
+      },
+      {
+        path: 'noticia',
+        indexRoute: {
+          component: SinglePostPage
+        },
+        childRoutes: [
+          {
+            path: ':post',
+            component: SinglePostPage
+          }
+        ]
       }
     ]
   }

@@ -95,8 +95,8 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(38), __webpack_require__(168)]; (function (React, ReactDOM, App) {
-	  ReactDOM.render(React.createElement(App, null), document.getElementById('pdp-app'));
+	__webpack_require__.e/* require */(1, function(__webpack_require__) { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(1), __webpack_require__(38), __webpack_require__(168), __webpack_require__(229)]; (function (React, ReactDOM, { Router, browserHistory }, Routes) {
+	  ReactDOM.render(React.createElement(Router, { history: browserHistory, routes: Routes }), document.getElementById('pdp-app'));
 	}.apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__));});
 
 /***/ }

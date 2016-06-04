@@ -5,6 +5,9 @@ body {
 .no-margin_--_ {
   margin: 0; }
 
+.no-padding_--_ {
+  padding: 0 !important; }
+
 .text-center {
   text-align: center; }
 
@@ -19,5 +22,14 @@ body {
 
 .full-width {
   width: 100% !important; }
+
+.text-black_--_ {
+  color: black !important; }
+
+.padding-15 {
+  padding: 15px; }
+
+.no-right-padding_--_ {
+  padding-right: 0; }
 
 /*# sourceMappingURL=App.css.map */
